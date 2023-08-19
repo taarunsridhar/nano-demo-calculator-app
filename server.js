@@ -25,7 +25,7 @@ baseRouter.post('/add', (req, res) => {
 baseRouter.post('/subtract', (req, res) => {
     var firstNumber = req.body.first;
     var secondNumber = req.body.second;
-    var answer = Math.abs(firstNumber - secondNumber);
+    var answer = firstNumber - secondNumber;
     res.json({"result": answer });
 });
 
